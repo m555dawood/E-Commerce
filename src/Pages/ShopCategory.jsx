@@ -2,8 +2,8 @@ import React from 'react'
 
 export const ShopCategory = () => {
   return (
-    <div>ShopCategory</div>
+    <div></div>
   )
 }
 
-export default ShopCategorygit 
+export default ShopCategory

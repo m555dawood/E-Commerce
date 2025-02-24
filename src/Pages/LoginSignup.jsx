@@ -2,7 +2,7 @@ import React from 'react'
 
 export const LoginSignup = () => {
   return (
-    <div>LoginSignup</div>
+    <div></div>
   )
 }
 export default LoginSignup
