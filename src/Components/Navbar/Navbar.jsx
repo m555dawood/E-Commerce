@@ -15,19 +15,20 @@ export const Navbar = () => {
       </div>
 
       <ul className="nav-menu">
-        <li onClick={() => setMenu("shop")}>
-          <Link to='/'>Shop</Link> {menu === "shop" ? <hr /> : <></>}
+        <li className={menu === "shop" ? "active" : ""} onClick={() => setMenu("shop")}>
+          <Link style={{ textDecoration: 'none' }} to='/'>Shop</Link>
         </li>
-        <li onClick={() => setMenu("mens")}>
-          <Link to='/mens'>Men</Link> {menu === "mens" ? <hr /> : <></>}
+        <li className={menu === "mens" ? "active" : ""} onClick={() => setMenu("mens")}>
+          <Link style={{ textDecoration: 'none' }} to='/mens'>Men</Link>
         </li>
-        <li onClick={() => setMenu("women")}>
-          <Link to='/womens'>Women</Link> {menu === "women" ? <hr /> : <></>}
+        <li className={menu === "women" ? "active" : ""} onClick={() => setMenu("women")}>
+          <Link style={{ textDecoration: 'none' }} to='/womens'>Women</Link>
         </li>
-        <li onClick={() => setMenu("kids")}>
-          <Link to='/kids'>Kids</Link> {menu === "kids" ? <hr /> : <></>}
+        <li className={menu === "kids" ? "active" : ""} onClick={() => setMenu("kids")}>
+          <Link style={{ textDecoration: 'none' }} to='/kids'>Kids</Link>
         </li>
       </ul>
+
 
       <div className="nav-login-cart">
         <Link to='/login'><button className="login-btn">Login</button></Link>
